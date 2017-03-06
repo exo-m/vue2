@@ -2,11 +2,14 @@ var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+var isProduction = function(){
+  return process.env.NODE_ENV === 'production';
+}
 module.exports = {
 	entry: './main.js',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		publicPath: '/',
+		publicPath: isProduction() ? '' : '/',
 		filename: 'build.js'
 	},
 	module: {
