@@ -1,5 +1,5 @@
 <template>
-	<div class="box">
+	<div class="">
 		<div id="main"></div>
 		<div id="ages"></div>
 	</div>
@@ -160,7 +160,7 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 @import '../styles/common.less';
 .box {
 	overflow: hidden;

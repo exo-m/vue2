@@ -1,5 +1,7 @@
 {
 	"presets": [
 		["es2015", { "modules": false }]
-	]
+	],
+	// 解决vuex2.0中的...mapActions格式错误：npm install --save-dev babel-plugin-transform-object-rest-spread
+	"plugins": ["transform-object-rest-spread"]
 }

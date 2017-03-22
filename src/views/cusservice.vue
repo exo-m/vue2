@@ -1,5 +1,5 @@
 <template>
-	<div class="box">
+	<div class="">
 		客服系统
 	</div>
 </template>
@@ -8,6 +8,6 @@
 
 	}
 </script>
-<style lang="less" scoped>
+<style lang="less">
 @import '../styles/common.less';
 </style>
